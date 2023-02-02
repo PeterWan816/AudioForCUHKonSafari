@@ -56,11 +56,11 @@ function Checking(array) {
     var id = tem.replace("https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/sound/", "");
     words.push(id);
     var url = tem+'.wav';
-    var sound      = document.createElement('audio');
-    sound.id       = 'audio-player-' + id;
+    var sound = document.createElement('audio');
+    sound.id = 'audio-player-' + id;
     sound.removeAttribute('autoplay');
-    sound.src      = url;
-    sound.type     = 'audio/wavx';
+    sound.src = url;
+    sound.type = 'audio/wavx';
     sound.style.display = "none";
     array.appendChild(sound);
     array.setAttribute('onclick', 'document.getElementById(\"audio-player-'+id+'\").play()');
